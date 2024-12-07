@@ -1,0 +1,245 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.profile-pic-container {
+    background-color: #a8d5e2; /* Light ocean blue color */
+    display: inline-block; /* Ensures the container adjusts to the size of the image */
+    padding: 10px; /* Optional: Adds spacing around the image */
+    border-radius: 50%; /* Optional: Makes the background circular for a rounded profile picture */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Optional: Adds a subtle shadow for depth */
+}
+
+.profile-pic {
+    width: 150px;
+    border-radius: 50%;
+    filter: grayscale(50%);
+    transform: scale(1.1);
+}
+
+header, footer {
+    text-align: center;
+    background-color: #d3d3d3; /* Smoky gray */
+    padding: 1em 0;
+}
+
+
+/* Three-Column Layout */
+.three-column-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr; /* Three equal-width columns */
+    gap: 20px; /* Space between columns */
+    align-items: start; /* Align all content to the top of the grid */
+}
+
+/* Individual Columns */
+.assignments, .summary-table, .feedback-form {
+    text-align: left; /* Align text to the left for readability */
+    display: grid; /* Use grid layout for internal alignment */
+    grid-template-rows: auto; /* Each row adjusts to its content */
+}
+
+/* General Table Styling */
+table {
+    width: 100%; /* Table takes up full width of the column */
+    border-collapse: collapse; /* Remove gaps between cells */
+    margin-top: 15px;
+}
+
+thead th {
+    background-color: #007bff;
+    color: white;
+    padding: 10px;
+    text-align: left;
+    font-weight: bold;
+}
+
+tbody td {
+    padding: 10px;
+    border: 1px solid #ddd;
+    text-align: left;
+}
+
+tbody a {
+    text-decoration: none;
+    color: #007bff;
+    font-weight: bold;
+}
+
+tbody a:hover {
+    text-decoration: underline;
+}
+
+/* General Table Styling */
+table {
+    width: 100%; /* Table takes up full width of the column */
+    border-collapse: collapse; /* Remove gaps between cells */
+    margin-top: 15px;
+    table-layout: fixed; /* Ensures consistent column widths */
+}
+
+thead th {
+    background-color: #007bff;
+    color: white;
+    padding: 10px;
+    text-align: left;
+    font-weight: bold;
+}
+
+tbody td {
+    padding: 10px;
+    border: 1px solid #ddd;
+    text-align: left;
+}
+
+tbody a {
+    text-decoration: none;
+    color: #007bff;
+    font-weight: bold;
+}
+
+tbody a:hover {
+    text-decoration: underline;
+}
+
+/* Align Tables to Equal Length */
+.three-column-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr; /* Three equal-width columns */
+    gap: 20px; /* Space between columns */
+    align-items: stretch; /* Ensure all columns are the same height */
+}
+
+.assignments, .summary-table {
+    display: flex;
+    flex-direction: column;
+}
+
+.assignments table, .summary-table table {
+    flex-grow: 1; /* Force tables to grow equally */
+    height: 100%; /* Match height of both tables */
+}
+
+/* Summary Table Styling */
+table {
+    width: 100%; /* Full width of the column */
+    border-collapse: collapse;
+    margin: 0 auto; /* Center the table within its container */
+}
+
+thead th {
+    background-color: #007bff;
+    color: white;
+    padding: 10px;
+    font-weight: bold;
+    text-align: left;
+}
+
+tbody td {
+    padding: 10px;
+    border: 1px solid #ddd;
+    text-align: left;
+}
+
+tfoot td {
+    background-color: #e3f2fd;
+    font-weight: bold;
+    text-align: center;
+    padding: 10px;
+}
+
+/* General Feedback Section Styling */
+.feedback-section {
+    display: flex;
+    flex-direction: column; /* Stack the Feedback Form and Comments sections vertically */
+    gap: 20px; /* Space between Feedback Form and Comments */
+    width: 100%;
+    padding: 10px;
+}
+
+/* Feedback Form Styling */
+.feedback-form {
+    padding: 15px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    background-color: #f9f9f9;
+}
+
+.feedback-form h2 {
+    margin-bottom: 15px;
+}
+
+form label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+form input, form textarea, form button {
+    width: 100%;
+    margin-bottom: 10px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+form button {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    cursor: pointer;
+    font-size: 1em;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+form button:hover {
+    background-color: #0056b3;
+}
+
+/* Comments Section Styling */
+.comments-display {
+    padding: 15px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    background-color: #f9f9f9;
+}
+
+.comments-display h2 {
+    margin-bottom: 10px;
+}
+
+.comments-display ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.comments-display li {
+    padding: 10px;
+    border-bottom: 1px solid #ddd;
+    margin-bottom: 10px;
+}
+
+.comments-display li:last-child {
+    border-bottom: none; /* Remove bottom border for the last comment */
+}
+
+/* Video */
+.video-section {
+    text-align: center; /* Center the video and heading */
+    margin-bottom: 20px; /* Add spacing between the video and the feedback form */
+}
+
+video {
+    width: 100%; /* Make the video responsive */
+    max-width: 800px; /* Set a maximum width */
+    height: auto; /* Maintain aspect ratio */
+    margin: 0 auto; /* Center the video horizontally */
+    display: block;
+}
+
+.feedback-form {
+    margin-top: 20px;
+}
